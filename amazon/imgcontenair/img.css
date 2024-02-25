@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   background-color: darkcyan;
+}
+ .box{
+    padding: 1vw 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9vw;
+}
+.box1{
+    height: 28vw;
+    width: 22vw;
+    background-color: blue;
+    padding-left: 0.7vw;
+}
+.img-contenir{
+    display: flex;
+    background-color: red;
+    margin: 0.9vw 0.9vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    max-width: 300px;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+.alag img{
+    width: 128px;
+    height: 107px;
+    object-fit: cover;
+}

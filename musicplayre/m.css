@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(35, 46, 35);
+    color: white;
+}
+#nav{
+    height: 12%;
+    width: 100%;
+    padding:2vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h3,h6{
+    font-size: 1.5vw;
+    color: white;
+}
+#nav h5{
+    color: white;
+
+}
+
+
+
+
+
+#music{
+    height: 88%;
+    width: 100%;
+    padding: 3vw 4vw;
+     display: flex;
+    align-items: center;
+     justify-content: space-between; 
+    gap: 2vw;  
+}
+#left{
+    height: 94%;
+    width: 45%;
+    background-color: lightblue;
+     /* display: flex;
+    align-items: center;  */
+    /* background-image: url("https://i.ytimg.com/vi/OSF1k2pn4yI/maxresdefault.jpg"); 
+    object-fit: cover; */
+}
+#left #image{
+    
+    height: 70%;
+    width: 60%;
+    margin: 4vw 8vw; 
+}  
+#left #sine{
+    display: flex;
+    align-items: center;
+    margin-left: 15vw;
+    gap: 6px;
+    font-size: 1.6vw;
+    /* justify-content: space-between;
+    gap: 2vw; */
+} 
+#sine h3{
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 50%;
+}
+#sine h3:active{
+    scale: 0.9;
+    color: red;
+}
+
+#right{
+    height: 90%;
+    width: 45%;
+}
+#right h3{
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#allsong1{
+    height: 85%;
+   margin-top: 20px;
+}
+.allsong{
+    border-top: 1px solid white;
+
+}
+.allsong:nth-last-child(1){
+    border-bottom: 1px solid white;
+}
+.song{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw 0.5vw;
+    pointer-events: none;
+}
+.allsong:hover{
+    background-color:blue;
+}
+
+.song img{ 
+    height: 60px;
+    width: 60px;
+}

@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'fantasy';
+}
+html,  body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+  min-height: 100vh;
+    width: 100%;
+    background-color: #efea;
+    position: absolute;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 2vw; 
+} 
+ #nav #pic img{
+     width: 12vw;
+     height: 7vw;
+     margin-top: 3vw;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    font-size: 1.2vw;
+    font-weight: 300vw;
+}
+#nav-part2 h4{
+    padding:8px 18px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all ease 0.3s;
+    position: relative;
+    font-size:8px ;
+    overflow: hidden;
+}
+#nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+#nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+#nav-part2 h4 a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    align-items: right;
+}
+#nav-part2 h4:hover a{
+    color: white;
+}
+#center{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    border-bottom: 2vw;
+    border-bottom: 1px solid black;
+    padding-bottom: 2.5vw;
+}
+#left p{
+    width: 30vw;
+    padding: 0vw 2vw; 
+    line-height: 2vw;
+}
+#center h1{
+    font-size: 6vw;
+    text-align: right;
+    line-height: vw;
+    margin-right: 2VW;
+    margin-top: 3vw;
+}
+#ime2 video{
+    width: 100vw;
+    position: relative;
+    margin-top: 3VW;
+    padding: 3vw 2vw;
+}
+   
+#hero-shape{
+    width: 45vw;
+    height: 36vw;
+    background-color: red;
+     border-top-left-radius: 50%; 
+     border-bottom-left-radius: 50%; 
+      margin-left: 50vw;
+      margin-bottom: 100vh;
+      filter: blur(20px);
+    position: absolute;
+   /*  animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  */
+
+    
+}
+#hero1{
+    width: 94%;
+    height: 100%;
+    background-color:red;
+    background-color: red;
+    border-top-left-radius: 50%; 
+    border-bottom-left-radius: 50%; 
+     margin-left: 2vw;
+     margin-bottom: 100vh;
+     filter: blur(20px);
+     position: absolute;
+      animation-name: anime1;
+     animation-duration: 4s;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+     animation-iteration-count: infinite; 
+}
+#hero2{
+    width: 30vw;
+    height: 30vw;
+    background-color:red;
+    background-color: red;
+   border-radius: 50%;
+     margin-left: 2vw;
+     margin-bottom: 100vh;
+     filter: blur(20px);
+     position: absolute;
+     animation-name: anime2;
+     animation-duration: 4s;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+}
+#hero3{
+    width: 30vw;
+    height: 100%;
+    background-color:red;
+    background-color: red;
+    border-radius: 50%;
+     margin-left: 2vw;
+     margin-bottom: 100vh;
+     filter: blur(20px);
+     position: absolute;
+     animation-name: anime1;
+     animation-duration: 4s;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+}
+@keyframes anime1{
+    from{
+        transform: translate(-20%,-20%);
+    }
+    to{
+        transform: translate(2%,0%);
+    }
+}
+@keyframes anime2{
+    from{
+        transform: translate(-15%,-15%);
+    }
+    to{
+        transform: translate(2%,2%);
+    }
+}
+#name{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efea;
+    padding: 8vw 0vw;
+}
+#moving{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#moving::-webkit-scrollbar{
+    display: none;   
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+     animation-name: move;
+     animation-duration: 10s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+#moving h1{
+    font-size: 8.6vw;
+    display: inline-block;
+}
+#gola{
+    height: 40px;
+    width: 4vw;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin: 0vw 1vw;
+}
+@keyframes move{
+    from{
+        transform: translatex(0);
+    }
+    to{
+        transform: translatex(-100%);
+    }
+}
